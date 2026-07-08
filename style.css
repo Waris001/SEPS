@@ -397,3 +397,86 @@ body {
     .download-btn:hover{
       background:#e68900;
     }
+
+
+    /*==========================
+ Admission Popup
+==========================*/
+
+.admission-modal{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+}
+
+.admission-header{
+    background:linear-gradient(135deg,#04AA6D,#03885a);
+    color:#fff;
+    padding:25px 30px;
+    border:none;
+}
+
+.admission-header h3{
+    font-weight:700;
+    margin:0;
+}
+
+.admission-header small{
+    opacity:.9;
+}
+
+.admission-modal .modal-body{
+    padding:30px;
+    background:#fafafa;
+}
+
+.admission-modal label{
+    font-weight:600;
+    color:#444;
+    margin-bottom:8px;
+}
+
+.admission-modal .form-control,
+.admission-modal .form-select{
+    border-radius:12px;
+    min-height:48px;
+    border:1px solid #ddd;
+    transition:.3s;
+}
+
+.admission-modal textarea{
+    min-height:100px;
+}
+
+.admission-modal .form-control:focus,
+.admission-modal .form-select:focus{
+    border-color:#04AA6D;
+    box-shadow:0 0 0 .2rem rgba(4,170,109,.18);
+}
+
+.admission-modal .modal-footer{
+    border:none;
+    padding:20px 30px 30px;
+    background:#fafafa;
+}
+
+.modal.fade .modal-dialog{
+    transition:.35s ease;
+}
+
+.modal.show .modal-dialog{
+    transform:scale(1);
+}
+
+@media(max-width:768px){
+
+.admission-header{
+    text-align:center;
+}
+
+.admission-modal .modal-body{
+    padding:20px;
+}
+
+}
