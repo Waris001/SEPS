@@ -13,6 +13,145 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo.jpeg">
 </head>
+<!-- Admission Modal -->
+<div class="modal fade" id="admissionModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content admission-modal">
+
+            <div class="modal-header admission-header">
+
+                <div>
+                    <h3 class="mb-1">
+                        <i class="bi bi-mortarboard-fill"></i>
+                        Admission Registration
+                    </h3>
+                    <small>Session 2026-27</small>
+                </div>
+
+                <button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+
+            </div>
+
+            <form>
+
+                <div class="modal-body">
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label>Student Name *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Date of Birth *</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Gender *</label>
+                            <select class="form-select" required>
+                                <option selected disabled>Select</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Applying For Class *</label>
+                            <select class="form-select" required>
+                                <option disabled selected>Select Class</option>
+                                <option>Nursery</option>
+                                <option>LKG</option>
+                                <option>UKG</option>
+                                <option>Class 1</option>
+                                <option>Class 2</option>
+                                <option>Class 3</option>
+                                <option>Class 4</option>
+                                <option>Class 5</option>
+                                <option>Class 6</option>
+                                <option>Class 7</option>
+                                <option>Class 8</option>
+                                <option>Class 9</option>
+                                <option>Class 10</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Father's Name *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Mother's Name *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Mobile Number *</label>
+                            <input type="tel" class="form-control"
+                                   maxlength="10"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+
+                        <div class="col-md-12">
+                            <label>Residential Address *</label>
+                            <textarea class="form-control"
+                                      rows="3"
+                                      required></textarea>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>City</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>State</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Pincode</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Aadhar Number</label>
+                            <input type="text"
+                                   maxlength="12"
+                                   class="form-control">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-outline-secondary"
+                            data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+
+                    <button class="btn btn-school px-4">
+                        Submit Application
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
 
 <body>
 
@@ -82,10 +221,13 @@
                 </li>
 
                 <!-- CTA Button -->
-                <li class="nav-item ms-lg-3" >
-                    <a class="btn btn-school" href="#">Apply Now</a>
+                <li class="nav-item ms-lg-3">
+                    <button class="btn btn-school"
+                        data-bs-toggle="modal"
+                        data-bs-target="#admissionModal">
+                        Apply Now
+                    </button>
                 </li>
-
             </ul>
         </div>
     </div>
@@ -138,15 +280,15 @@
                     <h3>School Information</h3>
 
                     <p><strong>Address:</strong><br>
-                        Delhi, India
+                        Vill. Dhanohari, Post. Shahpur (Dumariaganj), Dist. Siddharth Nagar, UP
                     </p>
 
                     <p><strong>Phone:</strong><br>
-                        +91 98765 43210
+                        +91 98387 38875
                     </p>
 
                     <p><strong>Email:</strong><br>
-                        info@ppsschool.com
+                        info@sepschool.com
                     </p>
 
                     <!-- Google Map -->
